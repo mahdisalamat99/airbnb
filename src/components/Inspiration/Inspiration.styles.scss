@@ -1,0 +1,103 @@
+.whole-inspiration{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 70px;
+
+    .main-title{
+        margin-bottom: 10px;
+        padding: 10 20px;
+        font-size: 30px;
+        font-family: 'Ramabhadra', sans-serif;
+    }
+
+    @media (max-width:480px){
+        white-space: nowrap;
+    }
+
+    @media (max-width:480px){
+        .main-title{
+            font-size: 23px;
+        }
+    }
+
+    .section-title-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 8px 0;
+        border-bottom: 1px solid rgb(207, 207, 207);
+
+       
+    
+
+        
+
+        .section-title{
+            display: flex;
+            margin-right:  20px;
+            padding: 4px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: 'Hind Siliguri', sans-serif;
+            color: rgb(113, 113, 113);
+            
+            
+        }
+
+        @media(max-width:480px){
+            .section-title{
+                white-space: nowrap;
+                font-size: 10 ;
+            }
+        }
+
+        .section-title:hover{
+            color: rgb(34, 34, 34);
+            background-color: rgba(239,239,239,0.7);
+            border-radius: 8px;
+            padding: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            
+        }
+        
+        
+        
+    }
+
+    @media (max-width:480px){
+        .section-title-container{
+            width: 80vw;
+            overflow-x: auto;
+
+            
+        }
+    }
+
+    .items-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 10px;
+        padding: 10px 5px 5px 0px;
+
+        .item{
+            display: grid;
+            margin-bottom: 17px;
+
+            .main-name{
+                padding: 5px;
+            }
+
+            .sub-name{
+                color: rgb(113, 113, 113)
+            }
+        }
+    }
+
+    @media (max-width:480px){
+        .items-container{
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 100px;
+        }
+    }
+}

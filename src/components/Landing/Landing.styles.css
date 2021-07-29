@@ -1,0 +1,275 @@
+.landing {
+  height: 100%;
+  width: 100%;
+}
+
+.landing .container {
+  background: url("https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg?im_w=2560");
+  background-size: contain;
+  background-position: center center;
+  width: 100vw;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing .menu-container {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  padding: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  z-index: 200;
+}
+
+.landing .menu-container .search-box {
+  background: #fff;
+  display: none;
+  padding: 7px 7px 7px 15px;
+  border-radius: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 23%;
+  border: 0.2px solid rgba(112, 111, 111, 0.5);
+  -webkit-box-shadow: 2px 2px 5px  gray;
+          box-shadow: 2px 2px 5px  gray;
+}
+
+.landing .menu-container .search-box .search-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 23px;
+  width: 70%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+}
+
+.landing .menu-container .search-box .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  background: #ff385c;
+  padding: 14px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.landing .menu-container .search-box.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing .menu-container nav {
+  margin-right: 50px;
+}
+
+.landing .menu-container nav li {
+  padding: 0px 23px;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.landing .menu-container nav li .profile-container {
+  background: #fff;
+  width: 75px;
+  height: 42px;
+  border-radius: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.1px solid rgba(112, 111, 111, 0.3);
+}
+
+.landing .menu-container nav li .profile-container i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #706f6f;
+  margin: 7px;
+  font-size: 16px;
+}
+
+.landing .menu-container nav li .profile-container .user {
+  font-size: 30px;
+}
+
+.landing .menu-container nav li .profile-container .bar {
+  padding: 5px;
+}
+
+.landing .menu-container nav .become-host {
+  font-size: 16px;
+  font-family: 'Otomanopee One', sans-serif;
+  padding: 10px 10px;
+}
+
+.landing .menu-container nav .become-host:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+
+.landing .menu-container nav .become-host.active {
+  color: #000;
+}
+
+.landing .menu-container nav .lang-icon {
+  color: #fff;
+  font-size: 19px;
+  padding: 10px 15px;
+}
+
+.landing .menu-container nav .lang-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.landing .menu-container nav .lang-icon.active {
+  color: black;
+}
+
+.landing .menu-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 80px;
+  color: #fff;
+  font-family: 'Otomanopee One', sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .landing .menu-container .logo {
+    display: none;
+  }
+  .landing .menu-container .search-box {
+    position: absolute;
+    background: #fff;
+    display: none;
+    padding: 7px 7px 7px 15px;
+    border-radius: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90vw;
+    border: 0.2px solid rgba(112, 111, 111, 0.5);
+    -webkit-box-shadow: 2px 2px 5px  gray;
+            box-shadow: 2px 2px 5px  gray;
+  }
+  .landing .menu-container .search-box .search-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 23px;
+    width: 70%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    color: #000;
+  }
+  .landing .menu-container .search-box .search-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 10px;
+    background: #ff385c;
+    padding: 14px;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .landing .menu-container nav {
+    display: none;
+  }
+}
+
+.landing .menu-container.active {
+  background: white;
+}
+
+.landing .caption {
+  top: 40%;
+  left: 42vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.landing .caption p {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Otomanopee One', sans-serif;
+  display: block;
+}
+
+.landing .caption .btn-land {
+  margin-left: 35px;
+  margin-top: 20px;
+  padding: 20px 45px;
+  background-color: #fff;
+  border-radius: 40px;
+  font-family: 'Otomanopee One';
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: -5px 5px 20px  grey;
+          box-shadow: -5px 5px 20px  grey;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.landing .caption .btn-text {
+  background: -webkit-linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing .caption .btn-land:hover {
+  -webkit-box-shadow: -5px 5px 10px  grey;
+          box-shadow: -5px 5px 10px  grey;
+}
+
+@media (max-width: 480px) {
+  .landing .caption {
+    left: 20vw;
+  }
+  .landing .caption p {
+    white-space: nowrap;
+    left: 30%;
+  }
+  .landing .caption .btn-land {
+    padding: 13px 20px;
+    margin-left: 21%;
+  }
+}
+/*# sourceMappingURL=Landing.styles.css.map */

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import LandingComponent from './components/Landing/Landing.component';
+import ExploreNearby from './components/Explore-nearby/Explore-nearby.component';
+import LiveAnyWhere from './components/Live-anywhere/Live-anywhere.component';
+import GreatestOutDoors from './components/Greatest-outdoors/Greatest-outdoors.component';
+import DiscoverExperiences from './components/Discover-experiences/Discover-experiences.component';
+import TryHosting from './components/Try-hosting/Try-hosting.component';
+import Inspiration from './components/Inspiration/Inspiration.component';
+import Footer from './components/Footer/Footer.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <frameElement>
+      <LandingComponent/>
+      <ExploreNearby/>
+      <LiveAnyWhere/>
+      <GreatestOutDoors/>
+      <DiscoverExperiences/>
+      <TryHosting/>
+      <Inspiration/>
+      <Footer/>
+    </frameElement>
+    
   );
 }
 

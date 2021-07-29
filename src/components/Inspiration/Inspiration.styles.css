@@ -1,0 +1,103 @@
+.whole-inspiration {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 70px;
+}
+
+.whole-inspiration .main-title {
+  margin-bottom: 10px;
+  padding: 10 20px;
+  font-size: 30px;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .whole-inspiration {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .whole-inspiration .main-title {
+    font-size: 23px;
+  }
+}
+
+.whole-inspiration .section-title-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.whole-inspiration .section-title-container .section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Hind Siliguri', sans-serif;
+  color: #717171;
+}
+
+@media (max-width: 480px) {
+  .whole-inspiration .section-title-container .section-title {
+    white-space: nowrap;
+    font-size: 10;
+  }
+}
+
+.whole-inspiration .section-title-container .section-title:hover {
+  color: #222222;
+  background-color: rgba(239, 239, 239, 0.7);
+  border-radius: 8px;
+  padding: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .whole-inspiration .section-title-container {
+    width: 80vw;
+    overflow-x: auto;
+  }
+}
+
+.whole-inspiration .items-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  padding: 10px 5px 5px 0px;
+}
+
+.whole-inspiration .items-container .item {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 17px;
+}
+
+.whole-inspiration .items-container .item .main-name {
+  padding: 5px;
+}
+
+.whole-inspiration .items-container .item .sub-name {
+  color: #717171;
+}
+
+@media (max-width: 480px) {
+  .whole-inspiration .items-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+  }
+}
+/*# sourceMappingURL=Inspiration.styles.css.map */

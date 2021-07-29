@@ -1,0 +1,263 @@
+.landing {
+    height: 100%;
+    width: 100%;
+
+    .container{
+        background: url('https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg?im_w=2560');
+        background-size: contain;
+        background-position: center center;
+        width: 100vw;
+        height: 85vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    // Header Start
+        .menu-container{
+            position: fixed;
+            top: 0;
+            height: 80px;
+            width: 100%;
+            padding: 30px 10px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+            transition: all ease 0.2s;
+            z-index: 200;  
+
+            // search-bar
+            .search-box{
+                
+                background:#fff;
+                display: none;
+                padding: 7px 7px 7px 15px;
+                border-radius: 100px;
+                justify-content: space-between;
+                width: 23%;
+                border: 0.2px solid rgba(112, 111, 111,0.5);
+                box-shadow: 2px 2px 5px  gray;
+                .search-txt{
+                    
+                    display: flex;
+                    line-height: 23px;
+                    width: 70%;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    font-size: 15px;
+                    color: #000;
+                }
+
+                .search-btn{
+                    display: flex;
+                    font-size: 10px;
+                    background: #ff385c;
+                    padding: 14px;
+                    border-radius: 20px;
+                    color: #fff;
+                }
+            }
+
+            .search-box.active{
+                display: flex;
+            }
+            
+        nav{ 
+            margin-right: 50px;
+                li{
+                   padding: 0px 23px;
+                    display: inline-block;
+                    font-size: 16px;
+                    color: #fff;
+                    
+                    .profile-container{
+                        background: #fff;
+                        width: 75px;
+                        height: 42px;
+                        border-radius: 225px;
+                        // transform: translateY(12px);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        border: 0.1px solid rgba(112, 111, 111,0.3);
+                        i{
+                            display: flex;
+                            color: rgb(112, 111, 111);
+                            // padding: 5px;
+                            margin: 7px;
+                            font-size: 16px;
+                        }
+                        .user{
+                            font-size: 30px;
+                        }
+
+                        .bar{
+                            padding: 5px;
+                        }
+                        
+                    }
+
+
+                 }
+
+                 .become-host{
+                     font-size: 16px;
+                     font-family: 'Otomanopee One', sans-serif;
+                     padding: 10px 10px;
+                 }
+
+                 .become-host:hover{
+                     background: rgba(255,255,255,0.2);
+                     border-radius: 30px;
+                     padding: 10px 10px;
+                 }
+
+                 .become-host.active{
+                     color: #000;
+                 }
+
+                 .lang-icon{
+                     color: #fff;
+                     font-size: 19px;
+                     padding: 10px 15px;
+                 }
+
+                 .lang-icon:hover{
+                     background: rgba(255,255,255,0.2);
+                     padding: 10px 15px;
+                     border-radius: 50px;
+                 }
+
+                 .lang-icon.active{
+                     color: black;
+                 }
+             }
+             
+             
+             a{
+                 display: flex;
+                 padding: 0px 80px;
+                 color: #fff;
+                 font-family: 'Otomanopee One', sans-serif;
+                 text-decoration: none;
+             }
+
+        }
+
+        @media (max-width:480px){
+            .menu-container{
+                
+                .logo{
+                    display: none;
+                }
+
+                .search-box{
+                    position: absolute;
+                    background:#fff;
+                    display: none;
+                    padding: 7px 7px 7px 15px;
+                    border-radius: 100px;
+                    justify-content: space-between;
+                    width: 90vw;
+                    border: 0.2px solid rgba(112, 111, 111,0.5);
+                    box-shadow: 2px 2px 5px  gray;
+                    .search-txt{
+                        display: flex;
+                        line-height: 23px;
+                        width: 70%;
+                        border: none;
+                        background: none;
+                        outline: none;
+                        font-size: 15px;
+                        color: #000;
+                    }
+
+                    .search-btn{
+                        display: flex;
+                        font-size: 10px;
+                        background: #ff385c;
+                        padding: 14px;
+                        border-radius: 20px;
+                        color: #fff;
+                    }
+                }
+
+                nav{
+                    display: none;
+                }
+            }
+        }
+    
+
+    .menu-container.active{
+        background: rgb(255,255,255);
+    }
+    .caption{
+        top: 40%;
+        left: 42vw;
+        position: absolute;
+        z-index: 1;
+
+
+        
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Otomanopee One', sans-serif;
+            display: block;
+        }
+
+        .btn-land{
+            margin-left: 35px;
+            margin-top: 20px;
+            padding: 20px 45px;
+            background-color: #fff ;
+            border-radius: 40px;
+            font-family: 'Otomanopee One' ;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            box-shadow: -5px 5px 20px  grey;
+            
+            transition: all ease 1s;
+           
+          
+        }
+
+        .btn-text {
+            background: -webkit-linear-gradient(90deg, #6F019C 0%, #C6017E 135.12%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+
+        .btn-land:hover{
+            box-shadow: -5px 5px 10px  grey;
+        }
+
+       
+    }
+
+    @media (max-width:480px){
+        .caption{
+            left: 20vw;
+
+            p{
+                white-space: nowrap;
+                left: 30%;
+               
+            }
+
+            .btn-land{
+                padding: 13px 20px;
+                margin-left: 21%;
+            }
+        }
+    }
+
+   
+
+}

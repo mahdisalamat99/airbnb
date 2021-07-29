@@ -1,0 +1,93 @@
+.whole-explore-nearby {
+  margin-top: 20px;
+  padding: 10px 70px;
+}
+
+.whole-explore-nearby .title {
+  padding: 10 20px;
+  font-size: 1.8rem;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+.whole-explore-nearby .items-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 30px;
+  -ms-grid-rows: 90px 90px;
+      grid-template-rows: 90px 90px;
+}
+
+.whole-explore-nearby .items-container .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -webkit-column-gap: 1px;
+          column-gap: 1px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+
+.whole-explore-nearby .items-container .item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+
+.whole-explore-nearby .items-container .item img:hover {
+  -webkit-box-shadow: 5px 5px 15px gray;
+          box-shadow: 5px 5px 15px gray;
+}
+
+.whole-explore-nearby .items-container .item .item-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 7px;
+}
+
+.whole-explore-nearby .items-container .item .item-distance {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 7px;
+}
+
+@media (max-width: 480px) {
+  .whole-explore-nearby .items-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    -ms-grid-rows: (90px)[4];
+        grid-template-rows: repeat(4, 90px);
+  }
+  .whole-explore-nearby .items-container .item .item-name {
+    font-size: 15px;
+    margin-left: 7px;
+  }
+  .whole-explore-nearby .items-container .item .item-distance {
+    font-size: 13px;
+    margin-left: 7px;
+  }
+}
+/*# sourceMappingURL=Explore-nearby.styles.css.map */

@@ -1,0 +1,52 @@
+.whole-live-anywhere {
+  margin-top: 20px;
+  padding: 10px 70px;
+}
+
+.whole-live-anywhere .title {
+  margin-bottom: 10px;
+  padding: 10 20px;
+  font-size: 30px;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+.whole-live-anywhere .items-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.whole-live-anywhere .items-container .item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whole-live-anywhere .items-container .item .item-image {
+  border-radius: 20px;
+  width: 330px;
+  height: 330px;
+}
+
+.whole-live-anywhere .items-container .item .item-name {
+  margin-top: 7px;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .whole-live-anywhere .items-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=Live-anywhere.styles.css.map */

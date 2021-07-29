@@ -1,0 +1,124 @@
+.whole-greatest-outdoors {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 70px;
+}
+
+.whole-greatest-outdoors .image-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.whole-greatest-outdoors .image-container .effect {
+  width: 40%;
+  height: 100%;
+  background-color: #424242;
+  -webkit-box-shadow: 100px 0px 200px 200px #424242;
+          box-shadow: 100px 0px 200px 200px #424242;
+  position: relative;
+}
+
+.whole-greatest-outdoors .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  width: 50%;
+  height: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.whole-greatest-outdoors .image-container .texts {
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  color: #fff;
+}
+
+.whole-greatest-outdoors .image-container .texts .title {
+  display: block;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 36px;
+}
+
+.whole-greatest-outdoors .image-container .texts .subtitle {
+  font-family: 'Opensans',sans-serif;
+  font-size: 20px;
+}
+
+.whole-greatest-outdoors .image-container .black-button {
+  position: absolute;
+  top: 55%;
+  left: 8%;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 480px) {
+  .whole-greatest-outdoors .image-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80vw;
+    height: 70vh;
+  }
+  .whole-greatest-outdoors .image-container .effect {
+    display: -ms-grid;
+    display: grid;
+    height: 43%;
+    background-color: #424242;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+  }
+  .whole-greatest-outdoors .image-container .effect .black-button {
+    left: 30%;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .whole-greatest-outdoors .image-container img {
+    display: -ms-grid;
+    display: grid;
+    -o-object-position: bottom;
+       object-position: bottom;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+  .whole-greatest-outdoors .image-container .texts {
+    top: 10%;
+    text-align: center;
+  }
+  .whole-greatest-outdoors .image-container .texts .title {
+    font-size: 32px;
+    white-space: nowrap;
+    left: 70%;
+  }
+  .whole-greatest-outdoors .image-container .texts .subtitle {
+    font-size: 16px;
+    left: 30%;
+    white-space: nowrap;
+    top: 30%;
+  }
+}
+/*# sourceMappingURL=Greatest-outdoors.styles.css.map */

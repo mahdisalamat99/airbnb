@@ -1,0 +1,91 @@
+.whole-discover-experiences {
+  margin-top: 20px;
+  padding: 10px 70px;
+}
+
+.whole-discover-experiences .title {
+  margin-bottom: 10px;
+  padding: 10 20px;
+  font-size: 30px;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .whole-discover-experiences .title {
+    font-size: 25px;
+  }
+}
+
+.whole-discover-experiences .subtitle {
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .whole-discover-experiences .subtitle {
+    font-size: 16px;
+  }
+}
+
+.whole-discover-experiences .items-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.whole-discover-experiences .items-container .item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whole-discover-experiences .items-container .item .item-image {
+  border-radius: 20px;
+  width: 462px;
+  height: 462px;
+}
+
+.whole-discover-experiences .items-container .item .item-name .title-span {
+  margin-top: 7px;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.whole-discover-experiences .items-container .item .item-name .sub-des {
+  font-family: 'Open sans', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 480px) {
+  .whole-discover-experiences .items-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (400px)[3];
+        grid-template-rows: repeat(3, 400px);
+    grid-row-gap: 60px;
+  }
+  .whole-discover-experiences .items-container .item .item-image {
+    border-radius: 16px;
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whole-discover-experiences {
+    margin-bottom: 130px;
+  }
+}
+/*# sourceMappingURL=Discover-experiences.styles.css.map */

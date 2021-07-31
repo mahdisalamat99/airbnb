@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,+CAAsE;EAClF,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,IAAI;EACV,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "Lang-and-currency.styles.scss"
+    ],
+    "names": [],
+    "file": "Lang-and-currency.styles.css"
+}

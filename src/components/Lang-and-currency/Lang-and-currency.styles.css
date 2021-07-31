@@ -1,0 +1,12 @@
+.whole-block-lang {
+  position: absolute;
+  width: 1035px;
+  height: 710px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(#ade78f));
+  background: linear-gradient(0deg, #22c1c3 0%, #ade78f 100%);
+  top: 5vh;
+  left: 17vw;
+  border-radius: 0.8rem;
+  z-index: 1000;
+}
+/*# sourceMappingURL=Lang-and-currency.styles.css.map */

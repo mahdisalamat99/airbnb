@@ -1,13 +1,12 @@
 import React,{useState} from 'react';
 import './Landing.styles.css';
 import{ ReactComponent as Logo} from '../../images/airbnb.svg';
+import MenuPopup from '../Menu-popup/Menu-popup.component';
 
 const LandingComponent = () => {
 
 const [navbar,setNavbar] = useState(false);
-
-
-
+const [menu,setMenu] = useState(true);
 
 
 
@@ -22,13 +21,27 @@ const changeBackground = () => {
     }
 };
 
+
+
+
 window.addEventListener('scroll',changeBackground);
+
+const showMenu = (e) => {
+    setMenu (prev => !prev);
+    
+    // if ('e.target.id' !='profile-container'){
+    //     setMenu(true)
+    // }
+}
+
 
     return (
         <div className='landing' >
             <div className="container">
               
             </div>
+
+            <MenuPopup hidden={menu} />
 
             
                 <div className={navbar? 'menu-container active' : 'menu-container'}>
@@ -51,7 +64,7 @@ window.addEventListener('scroll',changeBackground);
                         <li className={navbar ? 'become-host active' : 'become-host'} >Become a host</li>
                         <li className={navbar ? 'lang-icon active' : 'lang-icon'} ><i class="fas fa-globe"></i></li>
                         <li>
-                            <div className='profile-container' >
+                            <div className='profile-container' id='profile-container' onClick={showMenu} >
                                 <i class="fas fa-bars  bar "></i>
                                 <i class="fas fa-user-circle  user "></i>
                                 

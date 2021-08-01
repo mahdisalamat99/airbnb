@@ -1,9 +1,13 @@
 import React from 'react';
 import './Live-anywhere.styles.css'; 
 
-const LiveAnyWhere = () => {
+const LiveAnyWhere = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='whole-live-anywhere' >
+        <div className='whole-live-anywhere' onClick={closeOutSide} >
             <div className="title">Live anywhere</div>
             <div className="items-container">
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import './Footer.styles.css'
 
-const Footer = () => {
+const Footer = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='whole-footer' >
+        <div className='whole-footer' onClick={closeOutSide} >
             <div className="top-footer">
 
            <ul className="about">

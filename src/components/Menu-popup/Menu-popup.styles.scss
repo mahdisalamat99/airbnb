@@ -1,12 +1,13 @@
 .whole-block{
-    position: absolute;
+    position: fixed;
     width: 230px;
     height: 235px;
     background: #fff;
     top: 9vh;
     left: 79.5vw;
     border-radius: 0.8rem;
-    
+    z-index: 6;
+    box-shadow: 10px 10px 15px 1px rgba(105, 105, 105, 0.2);
     
 
 

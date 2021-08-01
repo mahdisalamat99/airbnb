@@ -2,8 +2,9 @@ import React from 'react';
 import './Menu-popup.styles.css';
 
 const MenuPopup = (props) => {
+
     return (
-        <div className='whole-block' hidden={props.hidden} >
+        <div className='whole-block'  >
             <p>Sign up</p>
             <p>Log in</p>
             <hr />

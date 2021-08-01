@@ -1,9 +1,13 @@
 import React from 'react';
 import './/Explore-nearby.styles.css'
 
-const ExploreNearby = () => {
+const ExploreNearby = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='whole-explore-nearby'>
+        <div className='whole-explore-nearby' onClick={closeOutSide}>
             <div className="title">Explore Nearby</div>
             <div className="items-container">
 

@@ -1,9 +1,13 @@
 import React from 'react';
 import './Discover-experiences.styles.css'
 
-const DiscoverExperiences = () => {
+const DiscoverExperiences = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='whole-discover-experiences' >
+        <div className='whole-discover-experiences' onClick={closeOutSide} >
             <div className="title">Discover Experiences</div>
             <div className="subtitle">Unique activities with local experts—in person or online.</div>
             <div className="items-container">

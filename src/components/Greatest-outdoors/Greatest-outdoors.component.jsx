@@ -1,9 +1,13 @@
 import React from 'react';
 import './Greatest-outdoors.styles.css'
 
-const GreatestOutDoors = () => {
+const GreatestOutDoors = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu( false)
+    }
     return (
-        <div className='whole-greatest-outdoors' >
+        <div className='whole-greatest-outdoors' onClick={closeOutSide} >
             <div className="image-container">
                 <div className="effect">
                     

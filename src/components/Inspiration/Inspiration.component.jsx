@@ -1,9 +1,13 @@
 import React from 'react';
 import './Inspiration.styles.css';
 
-const Inspiration = () => {
+const Inspiration = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='whole-inspiration' >
+        <div className='whole-inspiration' onClick={closeOutSide} >
            <div className="main-title">Inspiration for future getaways</div> 
            <div className="section-title-container">
                <div className="section-title">Destinations for arts & culture</div>

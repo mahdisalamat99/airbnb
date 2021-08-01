@@ -1,9 +1,13 @@
 import React from 'react';
 import './Try-hosting.styles.css'
 
-const TryHosting = () => {
+const TryHosting = ({menu,setMenu}) => {
+
+    const closeOutSide = () => {
+        setMenu(false)
+    };
     return (
-        <div className='try-hosting' >
+        <div className='try-hosting' onClick={closeOutSide} >
         <div className="image-container">
             <div className="effect">
 

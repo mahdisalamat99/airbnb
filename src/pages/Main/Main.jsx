@@ -10,12 +10,12 @@ import TryHosting from '../../components/Try-hosting/Try-hosting.component'
 
 const Main = () => {
     const [menu, setMenu] = useState(false);
-
+    const [language, setLanguage] = useState(false);
    
         return (
-        <div>
+        <div  >
             <frameElement>
-            <LandingComponent menu={menu} setMenu={setMenu} />
+            <LandingComponent menu={menu} setMenu={setMenu} language={language} setLanguage={setLanguage} />
             <ExploreNearby menu={menu} setMenu={setMenu}/>
             <LiveAnyWhere menu={menu} setMenu={setMenu} />
             <GreatestOutDoors menu={menu} setMenu={setMenu} />

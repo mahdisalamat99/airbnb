@@ -1,9 +1,20 @@
+.lang-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+}
+
 .whole-block-lang {
-  position: absolute;
+  position: fixed;
   width: 1035px;
   height: 710px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(#ade78f));
-  background: linear-gradient(0deg, #22c1c3 0%, #ade78f 100%);
+  background: #fff;
   top: 5vh;
   left: 17vw;
   border-radius: 0.8rem;

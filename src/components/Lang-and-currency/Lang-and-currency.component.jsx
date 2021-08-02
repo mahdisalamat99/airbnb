@@ -1,12 +1,15 @@
-import React from 'react';
-import './Lang-and-currency.styles.css';
+import React from "react";
+import "./Lang-and-currency.styles.css";
 
-const LangAndCurrency = (props) => {
-    return (
-        <div className='whole-block-lang' hidden={props.hidden} >
-            
-        </div>
-    )
-}
+const LangAndCurrency = ({ language, setLanguage }) => {
+  const closeOutsideLanguage = () => {
+    setLanguage(false);
+  };
+  return (
+    <div className="lang-modal-wrapper" onClick={closeOutsideLanguage}>
+      <div className="whole-block-lang"></div>
+    </div>
+  );
+};
 
-export default LangAndCurrency
+export default LangAndCurrency;

@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Live-anywhere.styles.css'; 
+import { MainContext } from "../../pages/Main/MainContext";
 
-const LiveAnyWhere = ({menu,setMenu}) => {
 
+const LiveAnyWhere = () => {
+    const [menu,setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu(false)
     };

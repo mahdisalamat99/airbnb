@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Inspiration.styles.css';
+import { MainContext } from "../../pages/Main/MainContext";
 
-const Inspiration = ({menu,setMenu}) => {
 
+const Inspiration = () => {
+    const [menu,setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu(false)
     };

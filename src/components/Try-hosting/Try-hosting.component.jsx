@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Try-hosting.styles.css'
+import { MainContext } from "../../pages/Main/MainContext";
 
-const TryHosting = ({menu,setMenu}) => {
 
+const TryHosting = () => {
+    const [menu,setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu(false)
     };

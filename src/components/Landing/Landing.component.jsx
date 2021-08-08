@@ -1,16 +1,23 @@
-import React, { useState,useEffect } from "react";
+import React, { useContext } from "react";
 import "./Landing.styles.css";
-import { ReactComponent as Logo } from "../../images/airbnb.svg";
 import MenuPopup from "../Menu-popup/Menu-popup.component";
 import SvgComponent from "./SvgComponent";
+import InnerMenu from "../Inner-menu/Inner-menu.component";
 import LangAndCurrency from "../Lang-and-currency/Lang-and-currency.component";
+import {
+  LanguageContext,
+  MainContext,
+  NavbarContext,
+  LoginContext,
+  CurrentUserContext,
+} from "../../pages/Main/MainContext";
 
-const LandingComponent = ({ menu, setMenu,language,setLanguage }) => {
-  const [navbar, setNavbar] = useState(false);
-
-  
-
-    
+const LandingComponent = () => {
+  const [menu, setMenu] = useContext(MainContext);
+  const [language, setLanguage] = useContext(LanguageContext);
+  const [navbar, setNavbar] = useContext(NavbarContext);
+  const [login, setLogin] = useContext(LoginContext);
+  const [isLogined, setIsLogined] = useContext(CurrentUserContext)
 
   const changeBackground = () => {
     if (window.scrollY >= 1) {
@@ -21,32 +28,31 @@ const LandingComponent = ({ menu, setMenu,language,setLanguage }) => {
   };
 
   window.addEventListener("scroll", changeBackground);
-  //   window.addEventListener("click", languageClose);
 
   const handleClick = () => {
     setMenu(!menu);
+    
   };
 
   const closeOutSide = () => {
     setMenu(false);
-    setLanguage(false)
+    setLanguage(false);
   };
 
-    const showLang = () => {
-      setLanguage(!language);
-    };
-
-  
-
+  const showLang = () => {
+    setLanguage(!language);
+  };
+ 
   return (
     <frameElement>
-      
-
       <div className="landing">
         <div className="container" onClick={closeOutSide}></div>
 
-        {menu && <MenuPopup />  }
-        {language && <LangAndCurrency language={language} setLanguage={setLanguage} /> }
+        {/* {menu && <MenuPopup />} */}
+
+        {isLogined ? <InnerMenu/> : menu ? <MenuPopup/> : undefined}
+
+        {language && <LangAndCurrency />}
 
         <div className={navbar ? "menu-container active" : "menu-container"}>
           <a href="#">

@@ -1,13 +1,15 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './/Explore-nearby.styles.css'
+import { MainContext } from "../../pages/Main/MainContext";
 
-const ExploreNearby = ({menu,setMenu}) => {
 
+const ExploreNearby = () => {
+    const [menu,setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu(false)
     };
     return (
-        <div className='whole-explore-nearby' onClick={closeOutSide}>
+        <div className='whole-explore-nearby' onClick={closeOutSide} >
             <div className="title">Explore Nearby</div>
             <div className="items-container">
 

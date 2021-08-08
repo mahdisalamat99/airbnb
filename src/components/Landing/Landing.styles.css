@@ -113,6 +113,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: 0.1px solid rgba(112, 111, 111, 0.3);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .landing .menu-container nav li .profile-container i {
@@ -130,6 +132,11 @@
 
 .landing .menu-container nav li .profile-container .bar {
   padding: 5px;
+}
+
+.landing .menu-container nav li .profile-container:hover {
+  -webkit-box-shadow: 1px 1px 3px  gray;
+          box-shadow: 1px 1px 3px  gray;
 }
 
 .landing .menu-container nav .become-host {

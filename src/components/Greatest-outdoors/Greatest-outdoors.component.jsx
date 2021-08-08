@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Greatest-outdoors.styles.css'
+import { MainContext } from "../../pages/Main/MainContext";
 
-const GreatestOutDoors = ({menu,setMenu}) => {
 
+const GreatestOutDoors = () => {
+    const [setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu( false)
     }

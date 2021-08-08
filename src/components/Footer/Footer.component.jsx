@@ -1,11 +1,19 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Footer.styles.css'
+import { MainContext,LanguageContext } from "../../pages/Main/MainContext";
 
-const Footer = ({menu,setMenu}) => {
+const Footer = () => {
+    const [menu,setMenu] = useContext(MainContext);
+    const [language,setLanguage] = useContext(LanguageContext);
 
+    
     const closeOutSide = () => {
         setMenu(false)
     };
+
+    const showLang = () => {
+        setLanguage(!language)
+    }
     return (
         <div className='whole-footer' onClick={closeOutSide} >
             <div className="top-footer">
@@ -72,6 +80,12 @@ const Footer = ({menu,setMenu}) => {
                 </div>
 
                 <div className="footer-right">
+                    <div className="item" onClick={showLang}>
+                        English
+                    </div>
+                    <div className="item" onClick={showLang}>
+                        EUR
+                    </div>
                     <div className="item">
                     <i class="fab fa-instagram-square"></i>
                     </div>

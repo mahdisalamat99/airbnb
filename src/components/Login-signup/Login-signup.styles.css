@@ -1,0 +1,182 @@
+.login-signup-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+}
+
+.whole-login-signup {
+  position: fixed;
+  width: 570px;
+  height: 680px;
+  background: #fff;
+  top: 5vh;
+  left: 32vw;
+  border-radius: 0.8rem;
+  z-index: 10000000;
+  overflow-y: auto;
+}
+
+.whole-login-signup .title-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  padding: 1.2rem;
+  border-bottom: 1px solid #c8c8c8;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+.whole-login-signup .title-section i {
+  display: -ms-grid;
+  display: grid;
+  margin-right: 10.9rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.whole-login-signup .title-section p {
+  display: -ms-grid;
+  display: grid;
+}
+
+.whole-login-signup .register-section {
+  padding: 0.8rem 1.2rem;
+}
+
+.whole-login-signup .register-section .welcome {
+  padding: 0.5rem;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 1.5rem;
+}
+
+.whole-login-signup .register-section .select-country select {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.whole-login-signup .register-section .select-country select option {
+  font-size: 1rem;
+}
+
+.whole-login-signup .register-section .phone-number input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+  font-size: 1rem;
+}
+
+.whole-login-signup .register-section .policy {
+  margin: 0.3rem 0.1rem 1rem 0;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.whole-login-signup .register-section .policy a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.whole-login-signup .register-section button {
+  background: #da0c64;
+  width: 100%;
+  height: 3.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 1rem;
+}
+
+.whole-login-signup .splitter {
+  padding: 1rem 1.2rem 1rem 0.3rem;
+}
+
+.whole-login-signup .splitter .or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: gray;
+}
+
+.whole-login-signup .splitter .or::before,
+.whole-login-signup .splitter .or::after {
+  content: '';
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  border-bottom: 0.1px solid rgba(200, 200, 200, 0.9);
+  margin: 10px;
+}
+
+.whole-login-signup .splitter .or:before {
+  margin-right: 10px;
+}
+
+.whole-login-signup .splitter .or:after {
+  margin-left: 10px;
+}
+
+.whole-login-signup .login-section {
+  padding: 0.2rem 1.2rem;
+  width: 100%;
+}
+
+.whole-login-signup .login-section .button {
+  padding: 0.3rem 0.6rem;
+  border: 2px solid gray;
+  margin: 0.2rem 0;
+  font-family: 'Ramabhadra', sans-serif;
+  color: gray;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whole-login-signup .login-section .button img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whole-login-signup .login-section .button p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 9.5rem;
+}
+
+.whole-login-signup .login-section .button:hover {
+  border: 2px solid black;
+}
+
+.whole-login-signup .login-section .google p {
+  margin-left: 9.9rem;
+}
+
+.whole-login-signup .login-section .apple p {
+  margin-left: 10.2rem;
+}
+
+.whole-login-signup .login-section .email p {
+  margin-left: 10.2rem;
+}
+/*# sourceMappingURL=Login-signup.styles.css.map */

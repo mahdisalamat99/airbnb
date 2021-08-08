@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Discover-experiences.styles.css'
+import { MainContext } from "../../pages/Main/MainContext";
 
-const DiscoverExperiences = ({menu,setMenu}) => {
 
+const DiscoverExperiences = () => {
+    const [menu,setMenu] = useContext(MainContext);
     const closeOutSide = () => {
         setMenu(false)
     };

@@ -1,0 +1,24 @@
+.whole-block-inner {
+  position: fixed;
+  width: 230px;
+  height: 460px;
+  background: #fff;
+  top: 9vh;
+  left: 79.5vw;
+  border-radius: 0.8rem;
+  z-index: 6;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(105, 105, 105, 0.2);
+          box-shadow: 10px 10px 15px 1px rgba(105, 105, 105, 0.2);
+}
+
+.whole-block-inner p {
+  padding: 10px 15px;
+  margin: 0.4rem 0 0.1rem 0;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.whole-block-inner p:hover {
+  background: rgba(187, 179, 179, 0.2);
+}
+/*# sourceMappingURL=Inner-menu.styles.css.map */

@@ -1,6 +1,7 @@
 import React,{useContext} from 'react';
 import './Footer.styles.css'
 import { MainContext,LanguageContext } from "../../pages/Main/MainContext";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
     const [menu,setMenu] = useContext(MainContext);
@@ -65,18 +66,26 @@ const Footer = () => {
 
             <div className="bottom-footer">
                 <div className="footer-left">
+                    <Link to='/'>
                     <div className="item">
                         <span>© 2021 Airbnb, Inc.</span>
                     </div>
+                    </Link>
+                    <Link to='/terms'>
                     <div className="item">
                         <span>Privacy</span>
                     </div>
+                    </Link>
+                    <Link to='/terms'>
                     <div className="item">
                         <span>Terms</span>
                     </div>
+                    </Link>
+                    <Link to='/site-map'>
                     <div className="item">
                         <span>Sitemap</span>
                     </div>
+                    </Link>
                 </div>
 
                 <div className="footer-right">

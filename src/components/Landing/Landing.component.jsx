@@ -19,42 +19,42 @@ const LandingComponent = () => {
   const [login, setLogin] = useContext(LoginContext);
   const [isLogined, setIsLogined] = useContext(CurrentUserContext)
 
-  const changeBackground = () => {
-    if (window.scrollY >= 1) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 1) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
 
-  window.addEventListener("scroll", changeBackground);
+  // window.addEventListener("scroll", changeBackground);
 
-  const handleClick = () => {
-    setMenu(!menu);
+  // const handleClick = () => {
+  //   setMenu(!menu);
     
-  };
+  // };
 
   const closeOutSide = () => {
     setMenu(false);
     setLanguage(false);
   };
 
-  const showLang = () => {
-    setLanguage(!language);
-  };
+  // const showLang = () => {
+  //   setLanguage(!language);
+  // };
  
   return (
     <frameElement>
       <div className="landing">
         <div className="container" onClick={closeOutSide}></div>
 
-        {/* {menu && <MenuPopup />} */}
+        {menu && <MenuPopup />}
 
         {isLogined ? <InnerMenu/> : menu ? <MenuPopup/> : undefined}
 
         {language && <LangAndCurrency />}
 
-        <div className={navbar ? "menu-container active" : "menu-container"}>
+        {/* <div className={navbar ? "menu-container active" : "menu-container"}>
           <a href="#">
             <SvgComponent color={navbar ? "#ff385c" : "#fff"} />
           </a>
@@ -92,7 +92,7 @@ const LandingComponent = () => {
               </div>
             </li>
           </nav>
-        </div>
+        </div> */}
 
         <div className="caption">
           <p>Not sure where to go?Perfect.</p>

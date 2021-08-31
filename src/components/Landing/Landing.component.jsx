@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import "./Landing.styles.css";
-import MenuPopup from "../Menu-popup/Menu-popup.component";
 import SvgComponent from "./SvgComponent";
+import MenuPopup from "../Menu-popup/Menu-popup.component";
 import InnerMenu from "../Inner-menu/Inner-menu.component";
+import MainMenupopup from "../Menu-popup/index";
 import LangAndCurrency from "../Lang-and-currency/Lang-and-currency.component";
 import {
   LanguageContext,
@@ -19,42 +20,46 @@ const LandingComponent = () => {
   const [login, setLogin] = useContext(LoginContext);
   const [isLogined, setIsLogined] = useContext(CurrentUserContext)
 
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 1) {
-  //     setNavbar(true);
-  //   } else {
-  //     setNavbar(false);
-  //   }
-  // };
+  const changeBackground = () => {
+    if (window.scrollY >= 1) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
 
-  // window.addEventListener("scroll", changeBackground);
+  window.addEventListener("scroll", changeBackground);
 
-  // const handleClick = () => {
-  //   setMenu(!menu);
+  const handleClick = () => {
+    setMenu(!menu);
     
-  // };
+  };
 
   const closeOutSide = () => {
     setMenu(false);
     setLanguage(false);
   };
 
-  // const showLang = () => {
-  //   setLanguage(!language);
-  // };
+  const showLang = () => {
+    setLanguage(!language);
+  };
  
   return (
     <frameElement>
       <div className="landing">
         <div className="container" onClick={closeOutSide}></div>
 
-        {menu && <MenuPopup />}
+        
 
-        {isLogined ? <InnerMenu/> : menu ? <MenuPopup/> : undefined}
+        {menu && <MainMenupopup loggedin={isLogined} />}
+        
+        {isLogined ? <InnerMenu /> : menu ? <MenuPopup /> : undefined}
+
+        
 
         {language && <LangAndCurrency />}
 
-        {/* <div className={navbar ? "menu-container active" : "menu-container"}>
+        <div className={navbar ? "menu-container active" : "menu-container"}>
           <a href="#">
             <SvgComponent color={navbar ? "#ff385c" : "#fff"} />
           </a>
@@ -92,7 +97,7 @@ const LandingComponent = () => {
               </div>
             </li>
           </nav>
-        </div> */}
+        </div>
 
         <div className="caption">
           <p>Not sure where to go?Perfect.</p>
